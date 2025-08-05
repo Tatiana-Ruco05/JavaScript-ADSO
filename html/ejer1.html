@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="widt=devide-width, initial-scale=1.0">
+    <title>document</title>
+    </html> 
+    </head>
+
+    <body>
+        <div id="numero1" style="background-color: aqua;"></div>
+        <div id="numero2" style="background-color: rgb(115, 0, 255);"></div>
+        <div id="suma" style="background-color: rgb(115, 0, 255);"></div>
+        <div id="resta" style="background-color: rgb(0, 51, 255);"></div>
+        <div id="multiplicacion" style="background-color: rgb(115, 0, 255);"></div>
+        <div id="divicion" style="background-color: rgb(21, 0, 255);"></div>
+    
+  
+
+    <script>
+        const numero1 = parseFloat(prompt("introduce el numero 1:"));
+        const numero2 = parseFloat(prompt("introduce el numero 2:"));
+
+        const divNumero1= document.getElementById("nuemero1")
+
+        //operacion
+        const suma = numero1 + numero2;
+        console.log("la suma es: " + suma);
+        document.write("la suma es: " + suma);
+        const resta = numero1 + numero2;
+        console.log("la resta es: " - suma);
+        document.write("<br>la resta es: " + suma);
+        const multiplicacion = numero1 * numero2;
+        console.log("la  multiplicacion es: " +  multiplicacion);
+        document.write("<br>la  multiplicacion es: " +  multiplicacion);
+        const divicion = numero1 / numero2;
+        console.log("la divicion es: " + divicion);
+        document.write("<br>la divicion es: " + divicion);
+    </script>
+    </body>
+</head>
+</html>
