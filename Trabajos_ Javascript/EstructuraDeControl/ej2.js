@@ -11,5 +11,11 @@ while (numero > 0) {
 
 console.log(`La suma de los dígitos es: ${suma}`);
 
-//Math.floor-- sirve para redondear un número decimal hacia abajo al entero más cercano. 
-  //Es decir, siempre devuelve el entero menor o igual al número dado.
+/**Math.floor-- sirve para redondear un número decimal hacia abajo al entero más cercano.
+  Es decir, siempre devuelve el entero menor o igual al número dado.
+  
+   * Math.abs-- math. abs() se utiliza para devolver el valor absoluto en JavaScript.
+  Niega el signo nativo de un número y devuelve el valor positivo correspondiente.
+   * 
+  */
+

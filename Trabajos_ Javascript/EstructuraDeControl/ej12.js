@@ -25,5 +25,6 @@ if (conteoImpares > 0) {
 
 /**
  *  toFixed// en JavaScript sirve para formatear un número con un número fijo de decimales.
+ 
  * const// es una palabra reservada que se utiliza para declarar una variable cuyo valor no puede ser reasignado después de su inicialización.
  */
