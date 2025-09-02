@@ -31,7 +31,7 @@ document.querySelector("#btnRomper").addEventListener("click", () => {
     crearAlcancia()
     actualizarDatosInterfaz()
 
-    
+
     alert("¡Has roto la alcancía! Ahora está vacía.")
 })
 
