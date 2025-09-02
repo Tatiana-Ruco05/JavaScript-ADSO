@@ -1,4 +1,4 @@
-import Alcancia from "./alcancia.js"
+import Alcancia from "./Alcancia.js"
 
 let miAlcancia = null
 
