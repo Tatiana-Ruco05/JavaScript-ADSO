@@ -1,4 +1,8 @@
 export default class Alcancia {
+    /**
+     * contrutor de la Alcancia
+     * inicia vacia
+     */
     constructor() {
         this.moneda200 = 0;
         this.moneda500 = 0;
@@ -17,6 +21,11 @@ export default class Alcancia {
         this.moneda1000++;
     }
 
+    /**
+     * Calcular la cantidad de dinero
+     * ahorrado en la alcancia
+     * @returns int
+     */
     calcularTotalMonedas() {
         const total = (this.moneda200 * 200) +
                       (this.moneda500 * 500) +
