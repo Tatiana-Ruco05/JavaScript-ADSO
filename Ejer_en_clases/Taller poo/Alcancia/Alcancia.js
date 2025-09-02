@@ -17,6 +17,9 @@ export default class Alcancia {
         this.moneda500++;
     }
 
+    /**
+     * metodo agregar moneda 1000
+     */
     agregarMoneda1000() {
         this.moneda1000++;
     }
