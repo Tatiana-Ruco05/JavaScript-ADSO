@@ -4,5 +4,5 @@ function enRango(number){
     }else{
         return"fuera del rango"
     }
-
+//*analizar
 }
