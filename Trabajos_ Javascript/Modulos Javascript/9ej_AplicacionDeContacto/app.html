@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Agenda de Contactos</title>
+  <style> table { border-collapse: collapse; } th, td { border: 1px solid black; padding: 5px; } </style>
+</head>
+<body>
+  <h1>Agenda de Contactos</h1>
+  <label>Identificación: <input type="text" id="identificacion"></label><br>
+  <label>Nombre: <input type="text" id="nombre"></label><br>
+  <label>Apellido: <input type="text" id="apellido"></label><br>
+  <label>Correo: <input type="email" id="correo"></label><br>
+  <label>Celular: <input type="text" id="celular"></label><br>
+  <button id="agregar">Agregar</button>
+  <button id="consultar">Consultar</button>
+  <button id="actualizar">Actualizar</button>
+  <button id="eliminar">Eliminar</button>
+
+  <h2>Contactos</h2>
+  <table id="tablaContactos">
+    <thead>
+      <tr>
+        <th>Identificación</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Correo</th>
+        <th>Celular</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
