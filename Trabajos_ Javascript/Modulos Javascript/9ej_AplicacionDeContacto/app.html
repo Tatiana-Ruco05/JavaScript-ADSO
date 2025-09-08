@@ -3,33 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <title>Agenda de Contactos</title>
-  <style> table { border-collapse: collapse; } th, td { border: 1px solid black; padding: 5px; } </style>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: inline-block;
+      width: 120px;
+      font-weight: bold;
+    }
+    input {
+      padding: 5px;
+      width: 200px;
+    }
+    .button-group {
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 8px 15px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
 </head>
 <body>
-  <h1>Agenda de Contactos</h1>
-  <label>Identificación: <input type="text" id="identificacion"></label><br>
-  <label>Nombre: <input type="text" id="nombre"></label><br>
-  <label>Apellido: <input type="text" id="apellido"></label><br>
-  <label>Correo: <input type="email" id="correo"></label><br>
-  <label>Celular: <input type="text" id="celular"></label><br>
-  <button id="agregar">Agregar</button>
-  <button id="consultar">Consultar</button>
-  <button id="actualizar">Actualizar</button>
-  <button id="eliminar">Eliminar</button>
+  <div class="container">
+    <h1>Agenda de Contactos</h1>
 
-  <h2>Contactos</h2>
-  <table id="tablaContactos">
-    <thead>
-      <tr>
-        <th>Identificación</th>
-        <th>Nombre</th>
-        <th>Apellido</th>
-        <th>Correo</th>
-        <th>Celular</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="identificacion">Identificación:</label>
+        <input type="text" id="identificacion" name="identificacion">
+      </div>
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+      </div>
+      <div class="form-group">
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido">
+      </div>
+      <div class="form-group">
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo">
+      </div>
+      <div class="form-group">
+        <label for="celular">Celular:</label>
+        <input type="text" id="celular" name="celular">
+      </div>
+      <div class="button-group">
+        <button type="button" id="agregar">Agregar</button>
+        <button type="button" id="consultar">Consultar</button>
+        <button type="button" id="actualizar">Actualizar</button>
+        <button type="button" id="eliminar">Eliminar</button>
+      </div>
+    </form>
+
+    <h2>Contactos</h2>
+    <table id="tablaContactos">
+      <thead>
+        <tr>
+          <th>Identificación</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Correo</th>
+          <th>Celular</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
 
   <script type="module" src="main.js"></script>
 </body>
