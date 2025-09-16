@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="clases.css">
+</head>
+<body>
+  <div class="container mt-4">
+    <h2 class="text-center fw-bold">TABLA DE PRODUCTOS</h2>
+
+    <!-- Todos en fila -->
+    <div class="d-flex mb-3">
+      <input type="text" class="form-control me-2" id="txtcodigo" placeholder="Código">
+      
+        <!-- se utiliza un selecte para hacer listas en los botones -->
+      <select class="form-select me-2" id="txtnombre">
+        <option value="">Nombre</option>
+        <option value="televisor">Televisor</option>
+        <option value="computador">Computador</option>
+        <option value="celular">Celular</option>
+        <option value="tablet">Tablet</option>
+      </select>
+
+      <select class="form-select me-2" id="txtcategoria">
+        <option value="">Categoría</option>
+        <option value="electrodomesticos">Electrodomésticos</option>
+        <option value="tecnologia">Tecnología</option>
+        <option value="hogar">Hogar</option>
+        <option value="oficina">Oficina</option>
+      </select>
+
+      <input type="number" class="form-control me-2" id="txtprecio" placeholder="Precio" min="0" step="50">
+
+      <!-- Boton de agregar -->
+      <button class="btn btn-primary" id="btnAgregar">Agregar</button>
+    </div>
+
+    
+    <table class="table table-bordered">
+      <thead class="table-warning text-center">
+        <tr>
+          <th>Código</th>
+          <th>Nombre</th>
+          <th>Categoría</th>
+          <th>Precio</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="./tabla.js"></script>
+</body>
+</html>
+
+   
+
+
