@@ -1,0 +1,23 @@
+/* Cursor pointer para fotos clickeables */
+.clickable {
+    cursor: pointer !important;
+}
+
+.candidato-foto-container {
+    position: relative;
+    display: inline-block;
+    margin: 25px 0;
+}
+
+.candidato-foto-container:hover {
+    cursor: pointer;
+}
+
+/* Asegurar que el contenedor tenga cursor pointer */
+.candidato-foto-container * {
+    pointer-events: none;
+}
+
+.clickable {
+    pointer-events: all;
+}
