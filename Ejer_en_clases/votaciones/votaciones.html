@@ -2,79 +2,38 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Votaciones - Elecciones</title>
-    
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    
-    <!-- Estilos personalizados -->
+    <title>Aplicación de Votación</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header class="header">
-            <h1>Sistema de Votaciones</h1>
-            <p id="electionStatus">Elecciones cerradas</p>
-        </header>
-
-        <!-- Controles de Administración -->
-        <div class="admin-panel">
-            <div class="admin-controls">
-                <button id="startElectionBtn" class="btn btn-primary">
-                     Iniciar Elecciones
-                </button>
-                <button id="closeElectionBtn" class="btn btn-danger" disabled>
-                     Cerrar Elecciones
-                </button>
-            </div>
-        </div>
-
-        <!-- Modal para Admin -->
-        <div id="adminModal" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 id="modalTitle">Iniciar Elecciones</h2>
-                    <span class="close" id="closeModal">&times;</span>
-                </div>
-                <div class="modal-body">
-                    <div id="adminForm">
-                        <div class="form-group">
-                            <label for="adminUser">Usuario:</label>
-                            <input type="text" id="adminUser" placeholder="Ingresa tu usuario" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="adminPass">Contraseña:</label>
-                            <input type="password" id="adminPass" placeholder="Ingresa tu contraseña" required>
-                        </div>
-                        <div class="form-actions">
-                            <button id="confirmAdminBtn" class="btn btn-primary">Confirmar</button>
-                            <button id="cancelAdminBtn" class="btn btn-secondary">Cancelar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Área de Votación -->
-        <main class="voting-section">
-            <div id="loading" class="loading">
-                <i class="bi bi-hourglass-split"></i>
-                Cargando candidatos...
-            </div>
-            <div id="votingArea" class="voting-area"></div>
-        </main>
-
-        <!-- Resultados -->
-        <section id="resultsSection" class="results-section" style="display: none;">
-            <h2> Resultados Finales de las Elecciones</h2>
-            <div id="results" class="results-container"></div>
-        </section>
+    <div id="adminPanel">
+        <h1>Panel de Administración</h1>
+        <input id="adminUser" placeholder="Usuario" type="text">
+        <input id="adminPass" placeholder="Contraseña" type="password">
+        <button onclick="adminLogin()">Iniciar Sesión</button>
     </div>
 
-    <!-- Scripts -->
-    <script src="js/api.js"></script>
+    <div id="adminActions" style="display: none;">
+        <h2>Acciones de Administrador</h2>
+        <button id="startElectionsBtn" onclick="startElections()">Iniciar Elecciones</button>
+        <button onclick="closeElections()">Cerrar Elecciones</button>
+    </div>
+
+    <div id="votingPanel" style="display: none;">
+        <h1>Votación</h1>
+        <div id="candidatesContainer"></div>
+    </div>
+
+    <div id="resultsPanel" style="display: none;">
+        <h1>Resultados de las Elecciones</h1>
+        <div id="resultsContainer"></div>
+    </div>
+
+    <!-- Un solo botón de volver -->
+    <div id="backButton" style="display:none;">
+        <button onclick="goBackToAdminActions()">Volver</button>
+    </div>
+
     <script src="js/app.js"></script>
 </body>
 </html>
